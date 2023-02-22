@@ -16,7 +16,6 @@ html {
   font-size: 16px;
   line-height: 1.4em;
   color: #e2e3ed
-
 }
 
 /*
@@ -92,11 +91,11 @@ textarea {
 /* General Styles */
 
 html {
-  
+
   font-size: 1em;
   line-height: 1.4em;
   color: #e2e3ed;
- 
+
 
 }
 
@@ -108,7 +107,7 @@ body {
   width: 90%;
   margin: auto;
 }
- 
+
 header figure {
   width: 60%;
   display: flex;
@@ -119,13 +118,13 @@ header figure {
 
 img {
   width: 100%;
- 
- }
-  
- figure {
-   margin: 0;
- 
- }
+
+}
+
+figure {
+  margin: 0;
+
+}
 
 h1 {
   font-size: 2.25em;
@@ -145,39 +144,35 @@ h3 h4 {
 }
 
 p {
-  font-size: .875em;
+  font-size: 1.125em;
 }
 
 nav {
   font-size: 1.125em;
   font-weight: bold;
-  
+
 }
 
-ul, 
+ul,
 ol {
- list-style: none;
- margin: 0;
- 
+  list-style: none;
+  margin: 0;
+
 
 }
- 
+
 a {
-	
+
   color: #e2e3ed;
   text-decoration: none;
 }
- 
- 
 
- 
-address {
- 
-}
- 
-.content-wrapper {
- 
-}
+
+
+
+address {}
+
+.content-wrapper {}
 
 
 /* -------------------- Base Header - Footer Styles -------------------- */
@@ -220,27 +215,26 @@ header nav {
 header nav ul {
   width: 50%;
   margin: 0 auto;
+  padding: 0;
   display: flex;
-  justify-content: space-around;
- 
+  justify-content: space-between;
+
 }
 
 
 .hero-area {
   padding: 50px 0;
   height: 500px;
-  display: flex;
-  justify-content: flex-start;
   background: url('../img/unplugged-retreat.jpg') center no-repeat;
   background-size: cover;
- 
+
 }
 
 .hero-area .content-wrapper {
-  display: flex;
-  justify-content: center;
+  width: 90%;
+
   margin: auto 0;
-  
+
 }
 
 .content-wrapper {
@@ -255,12 +249,19 @@ header nav ul {
   padding-bottom: 30px 0;
 }
 
-.form .text {
+.news-signup input {
   padding: 1em;
 }
 
 .form-description {
- 
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+  padding-top: 50px;
+}
+
+.form-description .news-signup {
+  width: 100%;
 }
 
 .form .button {
@@ -293,6 +294,7 @@ header nav ul {
   margin: auto;
 
 }
+
 /**
 
 .features .features-items {
@@ -309,7 +311,7 @@ header nav ul {
 .features p {
   margin: 0;
   text-align: center;
- 
+
 
 }
 
@@ -337,7 +339,7 @@ header nav ul {
 
 
 .reviews .content-wrapper .team-pic figure {
-  
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -345,11 +347,12 @@ header nav ul {
 
 
 }
+
 .reviews-description {
   display: flex;
   justify-content: flex-start;
   flex-flow: wrap;
-  
+
 }
 
 .reviews h2 {
@@ -377,7 +380,7 @@ footer p {
 
 footer .content-wrapper {
   width: 65%;
-  margin: 50px 0;
+
 }
 
 footer .content-wrapper .footer-content .contact {
@@ -387,24 +390,41 @@ footer .content-wrapper .footer-content .contact {
 
 footer h4 {
   padding: 20px 0;
+  width: 100%;
 }
 
 footer .contact {
   padding-bottom: 50px;
-  width: 60%;
+  margin: 0 auto;
+  text-align: center;
 
 
 }
-a
+
 footer .social {
   padding-bottom: 50px;
-  width: 60%;
- 
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+
+}
+
+footer .social p {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+
 }
 
 footer .social i {
-    font-size: 1.5em;
-    margin-bottom: 40px;
+  font-size: 1.25em;
+
+  padding: 10px;
+  background-color: #527158;
+  border-radius: 50%;
+
+
 }
 
 footer .Copyright {
@@ -423,15 +443,15 @@ aside {
 aside .form {
   margin-top: 30px;
 }
- 
+
 input[type=text] {
   box-sizing: border-box;
   width: 100%;
   color: #2a423a;
   font-style: italic;
-  
+
 }
- 
+
 input[type=button] {
   width: 100%;
   padding: 20px 0;
@@ -481,7 +501,7 @@ input[type=button] {
   padding: 50px 0;
 }
 
-  .mission-content {
+.mission-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -495,7 +515,8 @@ input[type=button] {
 }
 
 .map {
-  height: 350px;
+  /*  height: 350px;*/
+  margin: 0 auto;
 }
 
 .map figure {
@@ -521,16 +542,21 @@ input[type=button] {
 
 }
 
+.contact-us h2 {
+  margin: 0;
+  padding: 50px 0;
+
+}
 
 .contact-us .content-wrapper {
   display: flex;
-  justify-content: space-between;
-   
+  flex-direction: column;
+
 }
 
 address {
   width: 40%;
-  text-align: center;
+
 }
 
 footer .content-wrapper h4 {
@@ -541,6 +567,7 @@ footer .footer-content {
   flex-direction: column;
 
 }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -550,8 +577,8 @@ footer .footer-content {
  */
 
 .hidden,
-[hidden] {ad
-  display: none !important;
+[hidden] {
+  ad display: none !important;
 }
 
 /*
@@ -631,20 +658,32 @@ footer .footer-content {
 
 @media only screen and (min-width: 768px) {
   /*Tablet styles here*/
- 
+
   header .content-wrapper {
     flex-flow: nowrap;
   }
 
+  header figure {
+    justify-content: flex-start;
+    align-content: center;
+
+  }
+
+
   header .content-wrapper nav {
     display: flex;
-    justify-content: flex-end;
+
   }
 
   header .content-wrapper nav ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
   }
+
+  header .content-wrapper nav li a {
+    padding: 0 20px;
+  }
+
   header .content-wrapper h3 {
     width: 80%;
   }
@@ -662,13 +701,14 @@ footer .footer-content {
 
   .form-description .learn-more {
     width: 40%;
-    
+    padding: 20px 0;
+
 
   }
 
-  aside .news-signup {
+  .form-description .news-signup {
     width: 40%;
-    
+
   }
 
   .features .content-wrapper {
@@ -690,12 +730,29 @@ footer .footer-content {
     width: 100%;
   }
 
+  .reviews h3 {
+    margin: 0;
+    padding: 0;
+  }
+
+
+  .reviews .content-wrapper {
+    justify-content: space-between;
+  }
+
   .reviews .content-wrapper img {
     width: 100%;
   }
 
   article {
-    width: 50%;
+    width: 49%;
+  }
+
+
+  footer .content-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
   }
 
   footer .content-wrapper contact {
@@ -708,7 +765,7 @@ footer .footer-content {
   }
 
   footer .social {
-    width: 30%;
+    width: 40%;
   }
 
   .faq-content .content-wrapper {
@@ -716,27 +773,34 @@ footer .footer-content {
     justify-content: space-between;
     flex-flow: wrap;
   }
+
   .faq-content .content-wrapper .answer {
     width: 45%;
-  } 
-  
-/** about page @media min 768**/
+  }
 
-.mission-content {
-  flex-direction: row;
-}
-.mission-content p {
-  width: 45%;
-}
+  /** about page @media min 768**/
 
-.map figure {
-  padding-bottom: 75%;
-}
+  .mission-content {
+    flex-direction: row;
+  }
 
-footer .footer-content {
-  flex-direction: row;
-  justify-content: space-between;
-}
+  .mission-content p {
+    width: 45%;
+  }
+
+  .map figure {
+    padding-bottom: 75%;
+  }
+
+  .contact-us .content-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  footer .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
 }
 
