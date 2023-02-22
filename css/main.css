@@ -503,7 +503,7 @@ input[type=button] {
   position: absolute;
   top: 0;
   left: 0;
-  
+
 }
 
 .contact-us {
@@ -718,6 +718,11 @@ footer .footer-content {
 .mission-content p {
   width: 45%;
 }
+
+.map figure {
+  padding-bottom: 75%;
+}
+
 footer .footer-content {
   flex-direction: row;
   justify-content: space-between;
