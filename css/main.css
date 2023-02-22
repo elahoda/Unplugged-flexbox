@@ -274,6 +274,11 @@ header nav ul {
   background-size: cover;
 }
 
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
+}
+
 .features h2 {
   padding: 60px 0;
   margin: 0 auto;
