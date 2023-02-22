@@ -100,6 +100,7 @@ html {
 
 }
 
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-family: 'Open Sans', sans-serif;
@@ -108,6 +109,24 @@ body {
   margin: auto;
 }
  
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+img {
+  width: 100%;
+ 
+ }
+  
+ figure {
+   margin: 0;
+ 
+ }
+
 h1 {
   font-size: 2.25em;
   line-height: 43px;
@@ -138,6 +157,7 @@ nav {
 ul, 
 ol {
  list-style: none;
+ margin: 0;
  
 
 }
@@ -149,13 +169,7 @@ a {
 }
  
  
-img {
- 
-}
- 
-figure {
- 
-}
+
  
 address {
  
@@ -207,21 +221,26 @@ header nav ul {
   width: 50%;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
  
 }
 
 
 .hero-area {
   padding: 50px 0;
+  height: 500px;
   display: flex;
   justify-content: flex-start;
+  background: url('../img/unplugged-retreat.jpg') center no-repeat;
+  background-size: cover;
+ 
 }
 
 .hero-area .content-wrapper {
   display: flex;
   justify-content: center;
   margin: auto 0;
+  
 }
 
 .content-wrapper {
@@ -251,7 +270,8 @@ header nav ul {
 
 .features {
   padding: 50px 0;
-
+  background: url('../img/unplugged-retreat-features.jpg') center no-repeat;
+  background-size: cover;
 }
 
 .features h2 {
@@ -303,14 +323,28 @@ header nav ul {
   background-color: #527158;
 }
 
+
+
 .reviews .content-wrapper {
   display: flex;
   flex-flow: wrap;
 }
 
-.review-description {
+
+.reviews .content-wrapper .team-pic figure {
+  
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+
+
+}
+.reviews-description {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: wrap;
+  
 }
 
 .reviews h2 {
@@ -356,11 +390,11 @@ footer .contact {
 
 
 }
-
+a
 footer .social {
   padding-bottom: 50px;
   width: 60%;
-  background-color: #527158;
+  
 }
 
 footer .Copyright {
@@ -405,6 +439,9 @@ input[type=button] {
 /* ==========================================================================
    FAQ Page
    ========================================================================== */
+.faq-content {
+  background-color: #527158;
+}
 
 .faq-content .content-wrapper {
   display: flex;
@@ -419,6 +456,8 @@ input[type=button] {
 
 .faq-content h2 {
   width: 100%;
+  margin: 0;
+  padding: 40px 0;
 
 }
 
@@ -445,7 +484,17 @@ input[type=button] {
   width: 100%;
 }
 
-.contact .content-wrapper {
+.map {
+  height: 350px;
+}
+
+.contact-us {
+  background-color: #2a423a;
+
+}
+
+
+.contact-us .content-wrapper {
   display: flex;
   justify-content: space-between;
    
@@ -614,7 +663,7 @@ footer .footer-content {
   }
 
   .reviews .content-wrapper img {
-    width: 50%;
+    width: 100%;
   }
 
   article {
@@ -640,7 +689,7 @@ footer .footer-content {
     flex-flow: wrap;
   }
   .faq-content .content-wrapper .answer {
-    width: 50%;
+    width: 45%;
   } 
   
 /** about page @media min 768**/
